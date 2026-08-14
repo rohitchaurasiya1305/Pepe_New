@@ -1,0 +1,40 @@
+
+    <html>
+    <head>
+        <title>marketPlace Logs</title>
+        <style>
+            body { font-family: Arial; background-color: #f4f4f4; }
+            h2 { color: #333; }
+            p { background: #fff; padding: 8px; border-left: 4px solid #4CAF50; }
+            .ERROR { border-left: 4px solid red; }
+        </style>
+    </head>
+    <body>
+    <h2>marketPlace Process Logs</h2><p>13-08-2026 17:48:44 [INFO] - Ledger Summary Required Columns name are :- [&#x27;Account&#x27;, &#x27;Name of Customer / Vendor&#x27;, &#x27;Posting Date&#x27;, &#x27;Document Number&#x27;, &#x27;Document Type&#x27;, &#x27;Assignment&#x27;, &#x27;Text&#x27;, &#x27;Billing Document&#x27;, &#x27;Reference&#x27;, &#x27;Document Date&#x27;, &#x27;Special G/L Indicator&#x27;, &#x27;Amount in Local Currency&#x27;]</p><p>13-08-2026 17:48:46 [INFO] -  Ledger Summary Process starting datetime :- 2026-08-13 17:48:46</p><p>13-08-2026 17:48:46 [INFO] - Connected to SFTP host :- 13.235.184.6 successfully</p><p>13-08-2026 17:48:47 [INFO] - Downloading :- ./upload/PEPE-InfoAugust-Input-Dumps/Input Source Dumps/Ledger Dump/LS_23-07-2026.XLSX</p><p>13-08-2026 17:48:48 [INFO] - Downloaded 1 file(s) from :- ./upload/PEPE-InfoAugust-Input-Dumps/Input Source Dumps/Ledger Dump to :- C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\Ledger_Summary\InputFiles</p><p>13-08-2026 17:48:48 [INFO] - Processing file LS_23-07-2026.XLSX started</p><p>13-08-2026 17:48:48 [INFO] - File reading process started.</p><p>13-08-2026 17:48:48 [INFO] - Input file extension is .xlsx.</p><p>13-08-2026 17:48:49 [INFO] - Input data trimming process has started in the DataFrame.</p><p>13-08-2026 17:48:49 [INFO] - All required columns are present in file LS_23-07-2026.XLSX</p><p>13-08-2026 17:48:49 [INFO] - Ledger summary has no filtered column   
+ length of Ledger summary filtered dataframe is :- 3237</p><p>13-08-2026 17:48:49 [INFO] - Success DF length = 3233.
+ Successfully processed ledger Summary success records.
+       Customer Customer Name         Posting Date    Doc. No. Document Type  ... Sales Order Plant UOM Quantity Billing Doc
+1     70000384                2026-04-01 00:00:00  1600000069            DZ  ...                                           
+2     70000384                2026-04-01 00:00:00  1600000070            DZ  ...                                           
+3     70000458                2026-04-01 00:00:00  1600000000            DZ  ...                                           
+4     70000458                2026-04-01 00:00:00  1600000004            DZ  ...                                           
+5     70000458                2026-04-01 00:00:00  1600000009            DZ  ...                                           
+...        ...           ...                  ...         ...           ...  ...         ...   ...  ..      ...         ...
+3231  70000898                2026-04-30 00:00:00   400003703            AB  ...                                           
+3232  70000898                2026-04-30 00:00:00   400003703            AB  ...                                           
+3233  70000898                2026-04-30 00:00:00  1600002335            DZ  ...                                           
+3234  70000898                2026-04-30 00:00:00  2400009945            RV  ...                                           
+3235  70000901                2026-04-30 00:00:00  1600002687            DZ  ...                                           
+
+[3233 rows x 26 columns]</p><p>13-08-2026 17:48:49 [INFO] - Failed DF length = 4.
+ Successfully processed ledger Summary failed records.
+       Customer Customer Name         Posting Date  ... Quantity Billing Doc                                             Remark
+0     70000383                                asd  ...                                                    Invalid Posting Date
+8     70000458                                     ...                       Curr/INR is blank, Curr/INR must be integer, I...
+11    70000458                2026-04-01 00:00:00  ...                                                Curr/INR must be integer
+3236                                               ...                                                    Invalid Posting Date
+
+[4 rows x 27 columns]</p><p>13-08-2026 17:48:49 [INFO] - start Saving ouput file of LEDGERSUMMARY</p><p>13-08-2026 17:48:49 [INFO] - Saccessfully Saved ouput file of LEDGERSUMMARY :-LS_13_08_26.csv in folder :- C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\Ledger_Summary\LedgerSummary_Folder\OutputFiles</p><p>13-08-2026 17:48:49 [INFO] - Saccessfully Saved failed rows of LEDGERSUMMARY :-LS_Failed_13_08_26.csv in folder :- C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\Ledger_Summary\LedgerSummary_Folder\FailedRows</p><p>13-08-2026 17:48:50 [INFO] - Connected to SFTP host :- 13.235.184.6 successfully</p><p>13-08-2026 17:48:50 [INFO] - Uploading: C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\Ledger_Summary\LedgerSummary_Folder\OutputFiles\LS_13_08_26.csv → ./upload/PEPE-InfoAugust-Output-Folders/Output Folders/LedgerSummary/LS_13_08_26.csv</p><p>13-08-2026 17:48:50 [INFO] - Uploaded 1 file(s) from :- C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\Ledger_Summary\LedgerSummary_Folder\OutputFiles to :- ./upload/PEPE-InfoAugust-Output-Folders/Output Folders/LedgerSummary</p><p>13-08-2026 17:48:50 [INFO] - Input file is renamed to :- LS_23-07-2026_read.XLSX</p><p>13-08-2026 17:48:50 [INFO] - Ledger Summary Process script is completed successfully</p><p>13-08-2026 17:48:50 [INFO] - Ledger Summary Process ended datetime :- 2026-08-13 17:48:50</p>
+    </body>
+    </html>
+    

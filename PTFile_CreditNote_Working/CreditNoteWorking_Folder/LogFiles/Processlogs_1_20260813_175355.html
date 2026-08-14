@@ -1,0 +1,76 @@
+
+    <html>
+    <head>
+        <title>marketPlace Logs</title>
+        <style>
+            body { font-family: Arial; background-color: #f4f4f4; }
+            h2 { color: #333; }
+            p { background: #fff; padding: 8px; border-left: 4px solid #4CAF50; }
+            .ERROR { border-left: 4px solid red; }
+        </style>
+    </head>
+    <body>
+    <h2>marketPlace Process Logs</h2><p>13-08-2026 17:53:44 [INFO] - PT Files Required Columns name are :- [&#x27;Billing Document&#x27;, &#x27;Bill Date&#x27;, &#x27;Name Sold-To-Party&#x27;, &#x27;Ship-To Party&#x27;, &#x27;Name Ship-To-Party&#x27;, &#x27;EAN Code&#x27;, &#x27;Description&#x27;, &#x27;Item&#x27;, &#x27;Actual Invoiced Quantity&#x27;, &#x27;Max. Ret. Price&#x27;, &#x27;Net Value&#x27;, &#x27;HSN Code&#x27;, &#x27;Sales Item&#x27;, &#x27;Plant&#x27;, &#x27;Tax Amount&#x27;]</p><p>13-08-2026 17:53:44 [INFO] - Credit Note Working Required Columns name are :- [&#x27;Billing Document&#x27;, &#x27;Bill Date&#x27;, &#x27;Name Sold-To-Party&#x27;, &#x27;Ship-To Party&#x27;, &#x27;Name Ship-To-Party&#x27;, &#x27;EAN Code&#x27;, &#x27;Description&#x27;, &#x27;Item&#x27;, &#x27;Actual Invoiced Quantity&#x27;, &#x27;Max. Ret. Price&#x27;, &#x27;Net Value&#x27;, &#x27;HSN Code&#x27;, &#x27;Sales Item&#x27;, &#x27;Plant&#x27;, &#x27;Tax Amount&#x27;]</p><p>13-08-2026 17:53:45 [INFO] - PT_Files and Credit_Note Working Process starting datetime :- 2026-08-13 17:53:45</p><p>13-08-2026 17:53:45 [INFO] - Connected to SFTP host :- 13.235.184.6 successfully</p><p>13-08-2026 17:53:46 [INFO] - Downloading :- ./upload/PEPE-InfoAugust-Input-Dumps/Input Source Dumps/Invoice Detail Dump/Invoice_Details_Dump_20260723.xlsx</p><p>13-08-2026 17:53:46 [INFO] - Downloaded 1 file(s) from :- ./upload/PEPE-InfoAugust-Input-Dumps/Input Source Dumps/Invoice Detail Dump to :- C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\PTFile_CreditNote_Working\InputFiles</p><p>13-08-2026 17:53:46 [INFO] - Processing file Invoice_Details_Dump_20260723.xlsx started</p><p>13-08-2026 17:53:46 [INFO] - File reading process started.</p><p>13-08-2026 17:53:46 [INFO] - Input file extension is .xlsx.</p><p>13-08-2026 17:53:49 [INFO] - Input data trimming process has started in the DataFrame.</p><p>13-08-2026 17:53:49 [INFO] - All required columns present in file Invoice_Details_Dump_20260723.xlsx</p><p>13-08-2026 17:53:49 [INFO] - PT Files output generating in file started</p><p>13-08-2026 17:53:49 [INFO] - PT_Files has filtered column :-Order Type Not equal to  ZRET  
+ length of PT_Files filtered dataframe is :- 7698</p><p>13-08-2026 17:53:51 [INFO] - Success DF length = 7678.
+ Successfully processed PTFiles success records.
+      Brand Name Invoice Number         Invoice Date  ... Docket Date Acknowledgement No. Article Season
+0                   1192317801  2026-07-20 00:00:00  ...                                               
+1                   1192317801  2026-07-20 00:00:00  ...                                               
+2                   1192317801  2026-07-20 00:00:00  ...                                               
+3                   1192317801  2026-07-20 00:00:00  ...                                               
+4                   1192317801  2026-07-20 00:00:00  ...                                               
+...         ...            ...                  ...  ...         ...                 ...            ...
+7692                1197178074  2026-07-23 00:00:00  ...                                               
+7693                1197178080  2026-07-23 00:00:00  ...                                               
+7694                1197178080  2026-07-23 00:00:00  ...                                               
+7695                1197178080  2026-07-23 00:00:00  ...                                               
+7696                1197178080  2026-07-23 00:00:00  ...                                               
+
+[7678 rows x 41 columns]</p><p>13-08-2026 17:53:51 [INFO] - Failed DF length = 20.
+ Successfully processed PTFiles failed records.
+      Brand Name Invoice Number  ... Article Season                                             Remark
+13                  1192317801  ...                                         Net value must be integer
+24                  1192317801  ...                                         Net value must be integer
+26                  1192317801  ...                                         Net value must be integer
+36                  1192317801  ...                                         Net value must be integer
+39                  1192317801  ...                                         Net value must be integer
+63                  1192317801  ...                                         Net value must be integer
+64                  1192317801  ...                                         Net value must be integer
+185                 1192317822  ...                                         Net value must be integer
+186                 1192317822  ...                                         Net value must be integer
+199                 1192317822  ...                                         Net value must be integer
+210                 1192317822  ...                                         Net value must be integer
+253                 1192317822  ...                                         Net value must be integer
+259                 1192317822  ...                                         Net value must be integer
+297                 1192317822  ...                                         Net value must be integer
+308                 1192317822  ...                                         Net value must be integer
+3626                1197176957  ...                                         Net value must be integer
+3649                1197176957  ...                                         Net value must be integer
+7139                1197177868  ...                                         Net value must be integer
+7155                1197177869  ...                                         Net value must be integer
+7697                            ...                 Net value is blank, Net value must be integer,...
+
+[20 rows x 42 columns]</p><p>13-08-2026 17:53:51 [INFO] - start Saving ouput file of PTFILES</p><p>13-08-2026 17:53:51 [INFO] - Successfully Saved output file of PTFILES :-PT_13_08_26.csv in folder :- C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\PTFile_CreditNote_Working\PTFiles_Folder\OutputFiles</p><p>13-08-2026 17:53:51 [INFO] - Saccessfully Saved failed rows of PTFILES :-PT_Failed_13_08_26.csv in folder :- C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\PTFile_CreditNote_Working\PTFiles_Folder\FailedRows</p><p>13-08-2026 17:53:52 [INFO] - Connected to SFTP host :- 13.235.184.6 successfully</p><p>13-08-2026 17:53:52 [INFO] - Uploading: C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\PTFile_CreditNote_Working\PTFiles_Folder\OutputFiles\PT_13_08_26.csv → ./upload/PEPE-InfoAugust-Output-Folders/Output Folders/PTFile/PT_13_08_26.csv</p><p>13-08-2026 17:53:53 [INFO] - Uploaded 1 file(s) from :- C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\PTFile_CreditNote_Working\PTFiles_Folder\OutputFiles to :- ./upload/PEPE-InfoAugust-Output-Folders/Output Folders/PTFile</p><p>13-08-2026 17:53:53 [INFO] - Credit Note working output generating in file started</p><p>13-08-2026 17:53:53 [INFO] - Credit Note working has filtered column :-Order Type == &#x27;ZRET&#x27;  
+ length of CreditNote working filtered dataframe is :- 205</p><p>13-08-2026 17:53:53 [INFO] - Success DF length = 205.
+ Successfully processed CreditNoteWorking success records.
+     Brand Name Invoice Number         Invoice Date  ... Docket Date Acknowledgement No. Article Season
+0                  1192318080  2026-07-23 00:00:00  ...                                               
+1                  1192318080  2026-07-23 00:00:00  ...                                               
+2                  1192318080  2026-07-23 00:00:00  ...                                               
+3                  1192318080  2026-07-23 00:00:00  ...                                               
+4                  1192318080  2026-07-23 00:00:00  ...                                               
+..         ...            ...                  ...  ...         ...                 ...            ...
+200                1193178894  2026-07-20 00:00:00  ...                                               
+201                1193178894  2026-07-20 00:00:00  ...                                               
+202                1193178894  2026-07-20 00:00:00  ...                                               
+203                1193178894  2026-07-20 00:00:00  ...                                               
+204                1193178894  2026-07-20 00:00:00  ...                                               
+
+[205 rows x 41 columns]</p><p>13-08-2026 17:53:53 [INFO] - Failed DF length = 0.
+ Successfully processed CredutNoteWorking failed records.
+ Empty DataFrame
+Columns: [Brand Name, Invoice Number, Invoice Date, Bill To Party, Ship To Party Code, Ship To Party Name, Order Type, SPSN, Category, Group Category, Delivery No., G Article, Sizes, EAN Code, Item Description, Fit, Style, Colour, Invoice Qty, Unit MRP, Channel, Sales Ofc, Basic Amount, Discount Value, Discount %, Taxable Value, Cost per Unit, HSN Code, Brand Type, Line Item Number, Supplying Plant, IGST Value, CGST Value, SGST Value, IGST Tax %, CGST Tax %, SGST Tax %, Docket No., Docket Date, Acknowledgement No., Article Season, Remark]
+Index: []</p><p>13-08-2026 17:53:53 [INFO] - start Saving ouput file of CreditNoteWorking</p><p>13-08-2026 17:53:54 [INFO] - Successfully Saved output file of CREDITNOTEWORKING :-RTNW_13_08_26.xlsx in folder :- C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\PTFile_CreditNote_Working\CreditNoteWorking_Folder\OutputFiles</p><p>13-08-2026 17:53:55 [INFO] - Connected to SFTP host :- 13.235.184.6 successfully</p><p>13-08-2026 17:53:55 [INFO] - Uploading: C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\PTFile_CreditNote_Working\CreditNoteWorking_Folder\OutputFiles\RTNW_13_08_26.xlsx → ./upload/PEPE-InfoAugust-Output-Folders/Output Folders/CreditNoteWorking/RTNW_13_08_26.xlsx</p><p>13-08-2026 17:53:55 [INFO] - Uploaded 1 file(s) from :- C:\Users\Rohit.Chaurasiya\Python Process\github\Pepe_Process\PTFile_CreditNote_Working\CreditNoteWorking_Folder\OutputFiles to :- ./upload/PEPE-InfoAugust-Output-Folders/Output Folders/CreditNoteWorking</p><p>13-08-2026 17:53:55 [INFO] - Input file is renamed to :- Invoice_Details_Dump_20260723_read.xlsx</p><p>13-08-2026 17:53:55 [INFO] - PTFiles and Credit_Note Working Process script is completed successfully</p><p>13-08-2026 17:53:55 [INFO] - PT_Files and Credit_Note Working Process ended datetime :- 2026-08-13 17:53:55</p>
+    </body>
+    </html>
+    
